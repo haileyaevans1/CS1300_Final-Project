@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(230, 208, 179); /* Light blue for a wintery feel */
+    background-color: #f5e9e0; /* Light blue for a wintery feel */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,14 +9,14 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #ae0707; /* Festive red */
-    color: rgb(255, 236, 224);
+    background-color: #a31621; /* Festive red */
+    color: #f5e9e0;
     padding: 20px;
 }
 
 header h1 {
     margin: 0;
-    color: rgb(255, 236, 224);
+    color: #f5e9e0;
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000; /* Add depth */
@@ -31,13 +31,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(255, 236, 224);
+    color: #f5e9e0;
     padding: 5px 10px;
     border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: papayawhip;
+    background-color: rgb(255, 232, 194);
 }
 
 /* Main Content */
@@ -48,25 +48,25 @@ nav a:hover {
 .main-content img {
     max-width: 100%;
     height: auto;
-    border: 5px solid #d32f2f; /* Match the header color */
+    border: 5px solid #a31621; /* Match the header color */
     border-radius: 10px;
 }
 
 .greeting {
     font-size: 1.5em;
-    color: #388e3c; /* Christmas green */
+    color: #78c091; /* Christmas green */
     margin: 20px 0;
 }
 
 .lights {
-    color: #ffcc00; /* Warm gold */
+    color: #ffb10a; /* Warm gold */
     animation: twinkle 2s infinite;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #ae0707; /* Dark background */
-    color: rgb(255, 236, 224);
+    background-color: #a31621; /* Dark background */
+    color: #f5e9e0;
     padding: 10px;
     position: fixed;
     bottom: 0;

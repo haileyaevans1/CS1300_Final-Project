@@ -7,6 +7,19 @@ body {
     text-align: center;
 }
 
+/* .hero {
+    height: 100vh; 
+    background-image: url('assests/images/hero-image.PNG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    color: white;
+    /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); Add text shadow for readability */
+    /* padding: 20px;
+} */ 
+
 /* Header Styles */
 header {
     background-color: #a31621; /* Festive red */
@@ -54,7 +67,7 @@ nav a:hover {
 
 .greeting {
     font-size: 1.5em;
-    color: #78c091; /* Christmas green */
+    color: #a31621; /* Christmas green */
     margin: 20px 0;
 }
 

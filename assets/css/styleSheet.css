@@ -7,18 +7,6 @@ body {
     text-align: center;
 }
 
-/* .hero {
-    height: 100vh; 
-    background-image: url('assests/images/hero-image.PNG');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: top;
-    color: white;
-    /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); Add text shadow for readability */
-    /* padding: 20px;
-} */ 
 
 /* Header Styles */
 header {
@@ -65,14 +53,29 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.background-img {
+    height: auto;
+    background-image: url('/Users/haileyalayne/Desktop/CS1300/Week5/CS1300_FinalProject/assets/images/hero-image.jpg.webp');
+    background-size: cover;
+    font-family: 'Brush Script MT', cursive;
+    /* background-position: center; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: top; */
+    /* color: white; */
+    /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); Add text shadow for readability */
+    padding: 20px;
+}
+
 .greeting {
     font-size: 1.5em;
-    color: #a31621; /* Christmas green */
+    color: #a31621;
     margin: 20px 0;
 }
 
 .lights {
-    color: #ffb10a; /* Warm gold */
+    color: rgb(29, 113, 27);
+    /* color: #ffb10a; */
     animation: twinkle 2s infinite;
 }
 
@@ -84,6 +87,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 footer p {

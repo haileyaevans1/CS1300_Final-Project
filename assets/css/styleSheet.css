@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(235, 227, 214); 
+    background-color: rgb(235, 227, 214);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -20,18 +20,19 @@ header h1 {
     color: #f5e9e0;
     font-size: 2.5em;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #000; /* Add depth */
+    text-shadow: 2px 2px 4px #000;
+    /* Add depth */
 }
 
 
 nav {
     display: flex;
     justify-content: space-between;
-   background-color: #a31621;
-   padding: 15px;
-   /* position: fixed; */
-   align-items: center;
-   /* margin: -20px; */
+    background-color: #a31621;
+    padding: 15px;
+    /* position: fixed; */
+    align-items: center;
+    /* margin: -20px; */
 }
 
 nav a {
@@ -58,7 +59,8 @@ nav a:hover {
 .main-content img {
     max-width: 100%;
     height: 100%;
-    border: 5px solid #a31621; /* Match the header color */
+    border: 5px solid #a31621;
+    /* Match the header color */
     border-radius: 10px;
 }
 
@@ -80,6 +82,7 @@ nav a:hover {
     /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); Add text shadow for readability */
     padding: 20px;
 }
+
 /* 
 div.background {
     background: lightblue url(klematis.jpg) no-repeat center;
@@ -90,7 +93,7 @@ div.background {
     height: 400px;
     width: 400px;
 } */
-  
+
 div.transbox {
     background-color: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: sepia(100%);
@@ -104,12 +107,14 @@ div.transbox {
     /* justify-content: center;
     align-items: center; */
     flex-direction: column;
-   
+
 }
 
 
 
-body, p, .content-text {
+body,
+p,
+.content-text {
     font-family: 'Lora', serif;
 }
 
@@ -150,7 +155,7 @@ footer {
    background-color: #a31621;
    padding: 15px;
    align-items: center; */
-   /* margin: -20px; */
+/* margin: -20px; */
 /* }
 .foot {
     text-align: left;
@@ -163,9 +168,12 @@ footer {
 
 /* Twinkle Animation */
 @keyframes twinkle {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.5;
     }
@@ -253,28 +261,28 @@ footer {
 
 
 /* styling for holidayActivity gallery */
-* {
+.galleryBox {
     box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .galleryContainer {
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galleryContainer {
     position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -287,55 +295,55 @@ footer {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
+}
+
+/* Container for image text */
+.caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
+}
+
+/* Six columns side by side */
+.column {
     float: left;
     width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}

@@ -228,6 +228,28 @@ footer {
     background-color: #d32f2f;
 }
 
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    padding: 40px;
+    gap: 20px;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
 
 
 /* styling for holidayActivity gallery */

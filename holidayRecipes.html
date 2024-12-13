@@ -20,7 +20,7 @@
                     <td><a href="index.html">Home</a></td>
                     <td><a href="holidayRecipes.html">Recipes</a></td>
                     <td><a href="holidayMovies.html">Movies</a></td>
-                    <td><a href="HolidayActivity.html">Activities</a></td>
+                    <td><a href="holidayActivity.html">Activities</a></td>
                 </ul>
             </table>
         </nav>
@@ -35,8 +35,8 @@
         <!-- Recipe Grid -->
         <div class="recipe-grid">
             <!-- Recipe Card 1 -->
-            <div class="recipe-card">
-                <img src="assets/images/recipe1.jpg" alt="Hot Chocolate">
+            <div class="recipe-card" id="recipe-data">
+                <img src="assets/images/recipe1.jpeg" alt="Hot Chocolate">
                 <div class="content">
                     <h3>Hot Chocolate</h3>
                     <p id="dots">...<span id="more"></span></p>
@@ -49,7 +49,7 @@
 
             <!-- Recipe Card 2 -->
             <div class="recipe-card">
-                <img src="assets/images/recipe2.jpg" alt="Egg Nog">
+                <img src="assets/images/recipe2.jpeg" alt="Egg Nog">
                 <div class="content">
                     <h3>Egg Nog</h3>
                     <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button>
@@ -58,7 +58,7 @@
 
             <!-- Recipe Card 3 -->
             <div class="recipe-card">
-                <img src="assets/images/recipe3.jpg" alt="Gingerbread ">
+                <img src="assets/images/recipe3.jpeg" alt="Gingerbread ">
                 <div class="content">
                     <h3>Gingerbread</h3>
                     <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button>
@@ -66,7 +66,7 @@
             </div>
             <!-- Recipe Card 4 -->
             <div class="recipe-card">
-                <img src="assets/images/recipe4.jpg" alt="Sugar Cookies">
+                <img src="assets/images/recipe4.jpeg" alt="Sugar Cookies">
                 <div class="content">
                     <h3>Sugar Cookies</h3>
                     <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
@@ -75,38 +75,58 @@
         
             <!-- Recipe Card 5 -->
             <div class="recipe-card">
-                <img src="assets/images/recipe5.jpg" alt="Gingerbread Martini">
+                <img src="assets/images/recipe5.jpeg" alt="Gingerbread Martini">
                 <div class="content">
                     <h3>Gingerbread Martini</h3>
                     <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
                 </div>
             </div>
 
-            <!-- Recipe Card 6 -->
-            <div class="recipe-card">
-                <img src="assets/images/recipe6.jpg" alt="Hotty Toddy">
-                <div class="content">
-                    <h3>Sugar Cookies</h3>
-                    <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
-                </div>
+            <!-- Section to display nutrition facts -->
+            <div id="nutrition-section">
+                <h3>Nutrition Facts</h3>
+                <div id="nutrition-data"></div>
             </div>
+
+                      <!-- Nutrition Facts Modal -->
+            <!-- <div id="nutrition-modal" class="modal hidden">
+                <div id="nutrition-data" class="modal-content">
+                    <button id="close-modal" onclick="closeModal()">&times;</span>
+                    <h2>Nutrition Facts</h2>
+                    <div id="nutrition-data">
+                        Dynamic Content -->
+                    <!-- </div>
+                </div>
+            </div> -->
         </div>
     
+            <!-- Nutrition Facts Modal -->
+        <!-- <div id="nutrition-modal" class="modal hidden">
+            <div id="nutrition-data" class="modal-content">
+                <button id="close-modal" onclick="closeModal()">&times;</span>
+                <h2>Nutrition Facts</h2>
+                <div id="nutrition-data">
+                    Dynamic Content -->
+                <!-- </div>
+            </div> -->
+        </div>
 
-    <footer class="footer">
-        <div>
-            <p>&copy; 2024</p>
-            <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
-        </div>
-           
-        <div class="foot">
-            <h3>Check us out on Github!</h3>
-            <ul class="social-links">
-                <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Hailey Evans</a></li>
-                <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Gabriel Ihloff</a></li>
-                <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Rylie Isbell</a></li>
-            </ul>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div>
+                <p>&copy; 2024</p>
+                <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
+            </div>
+            
+            <div class="foot">
+                <h3>Check us out on Github!</h3>
+                <ul class="social-links">
+                    <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Hailey Evans</a></li>
+                    <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Gabriel Ihloff</a></li>
+                    <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Rylie Isbell</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="holidayRecipeScipt.js"></script>
     </body>
 </html>

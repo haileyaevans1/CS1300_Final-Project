@@ -268,9 +268,19 @@ ul {
 }
 
 .movie-card img {
-    width: 100%;
-    height: 200px;
+    width: 275px;
+    height: 400px;
     object-fit: cover;
+    justify-content: center;
+}
+
+.movie-card button {
+    background-color: #a31621;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 

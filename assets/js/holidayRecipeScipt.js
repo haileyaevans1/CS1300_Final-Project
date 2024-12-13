@@ -1,6 +1,6 @@
 // const query = 'holiday';
 const apiUrl = `https://rapidapi.com`;
-const apiKey = ``
+const apiKey = `8486df94cemshc4552ca78c22bf7p1a07b5jsn97cba309172b`
 
 fetch(apiUrl)
 .then(response => {
@@ -20,11 +20,11 @@ fetch(apiUrl)
       card.classList.add('recipe-card');
 
       const image = document.createElement('img');
-      image.src = recipe.imageUrl || 'default-image-url.jpg'; // Provide a default image URL
+      image.src = recipe.imageUrl || 'default-image-url.jpg'; 
       card.appendChild(image);
 
       const title = document.createElement('h3');
-      title.textContent = recipe.name || 'Untitled Recipe'; // Handle missing title
+      title.textContent = recipe.name || 'Title Recipe'; 
       card.appendChild(title);
 
       const button = document.createElement('button');

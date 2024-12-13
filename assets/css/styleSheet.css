@@ -200,15 +200,15 @@ ul {
 
 /* Hero Section */
 .hero {
-    background-image: url('assets/images/hero-image.jpg');
+    background-image: url('../images/hero-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #d32f2f;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Recipe Grid */

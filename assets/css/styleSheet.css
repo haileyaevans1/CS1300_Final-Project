@@ -357,12 +357,31 @@ ul {
 /* Position the image container (needed to position the left and right arrows) */
 .galleryContainer {
     position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    position: relative;
+    width: 100%;
 }
+
+.mySlides.active {
+    display: block;
+}
+
+/* Caption Container */
+.caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -374,22 +393,28 @@ ul {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    padding: 10px;
+    margin-top: -22px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    transform: translateY(-50%);
 }
 
+.prev {
+    left: 0;
+}
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    /* border-radius: 3px 0 0 3px; */
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -408,11 +433,17 @@ ul {
 }
 
 /* Container for image text */
-.caption-container {
+/* .caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
+} */
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .row:after {
@@ -423,8 +454,24 @@ ul {
 
 /* Six columns side by side */
 .column {
-    float: left;
-    width: 16.66%;
+    /* float: left;
+    width: 16.66%; */
+    flex: 1;
+    height: 50%;
+    /* max-width: 100px; */
+    padding: 5px;
+}
+
+
+.column img {
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.column img:hover, .column img.active {
+    border-color: #f00;
 }
 
 /* Add a transparency effect for thumnbail images */

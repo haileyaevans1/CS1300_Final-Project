@@ -1,149 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="assets/css/styleSheet.css">
-
-<meta charset="UTF-8">
-<meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
-<meta name="description" content="Holiday Ideas">
-<meta name="keywords" content="Holiday, movies, recipes, events">
-<meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
+    <meta name="description" content="Holiday Ideas">
+    <meta name="keywords" content="Holiday, movies, recipes, events">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/css/styleSheet.css">
+    <title>Holiday Events and Activities</title>
 </head>
-
-
-<meta charset="UTF-8">
-<meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
-<meta name="description" content="Holiday Ideas">
-<meta name="keywords" content="Holiday, movies, recipes, events">
-<meta name="viewport" content="width=device-width">
-</head>
-
-<header class="header">
-    <nav>
-        <table>
-            <ul>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="holidayRecipes.html">Recipes</a></td>
-                <td><a href="holidayMovies.html">Movies</a></td>
-                <td><a href="holidayActivity.html">Activities</a></td>
-            </ul>
-        </table>
-    </nav>
-</header>
-
 <body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav>
+            <table>
+                <ul>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="holidayRecipes.html">Recipes</a></td>
+                    <td><a href="holidayMovies.html">Movies</a></td>
+                    <td><a href="holidayActivity.html">Activities</a></td>
+                </ul>
+            </table>
+        </nav>
+    </header>
     
+
+    <!-- Hero Section -->
     <div class="hero">
         <h1>Holiday Events and Activities</h1>
     </div>
-    <!-- <article class="image-container">
-        <div class="eventContainer">
-            <h2>Ice Skating</h2>
-           
-        </div>
-    </article>
 
-    <div>
-        <h2>Tree Decorating</h2>
-    </div>
-
-    <div>
-        <h2>Bake Holiday Desserts and Treats</h2>
-    </div>
-
-    <div>
-        <h2>Christmas Caroling</h2>
-    </div>
-
-    
-
-    <-- Container for the image gallery -->
-    <div class="galleryContainer">
-
-        <!-- Full-width images with number text -->
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <!-- Full-width images -->
         <div class="mySlides">
             <div class="numbertext">1 / 6</div>
-            <img src="assets/images/santa.jpeg" style="width:100%">
+            <img src="assets/images/santa.jpeg" alt="Santa">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">2 / 6</div>
-            <img src="assets/images/lights.jpeg" style="width:100%">
+            <img src="assets/images/lights.jpeg" alt="Holiday Lights">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">3 / 6</div>
-            <img src="assets/images/gingerbread.jpeg" style="width:100%">
+            <img src="assets/images/gingerbread.jpeg" alt="Gingerbread">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">4 / 6</div>
-            <img src="assets/images/treeOrnaments.jpeg" style="width:100%">
+            <img src="assets/images/treeOrnaments.jpeg" alt="Tree Ornaments">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">5 / 6</div>
-            <img src="assets/images/iceskating.jpeg" style="width:100%">
+            <img src="assets/images/iceskating.jpeg" alt="Ice Skating">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">6 / 6</div>
-            <img src="assets/images/carols.jpeg" style="width:100%">
+            <img src="assets/images/carols.jpeg" alt="Christmas Carols">
         </div>
 
-        <!-- Next and previous buttons -->
+        <!-- Navigation buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- Image text -->
+        <!-- Caption -->
         <div class="caption-container">
             <p id="caption"></p>
         </div>
 
-        <!-- Thumbnail images -->
+        <!-- Thumbnail navigation -->
         <div class="row">
             <div class="column">
-                <img class="demo cursor" src="assets/images/carols.jpeg" onclick="currentSlide(1)"
-                    alt="carols">
+                <img class="demo cursor" src="assets/images/carols.jpeg" onclick="currentSlide(1)" alt="Carols">
             </div>
             <div class="column">
-                <img class="demo cursor" src="assets/images/gingerbread.jpeg" onclick="currentSlide(2)"
-                    alt="gingerbread">
+                <img class="demo cursor" src="assets/images/gingerbread.jpeg" onclick="currentSlide(2)" alt="Gingerbread">
             </div>
             <div class="column">
-                <img class="demo cursor" src="assets/images/iceskating.jpeg" onclick="currentSlide(3)"
-                    alt="iceskating">
+                <img class="demo cursor" src="assets/images/iceskating.jpeg" onclick="currentSlide(3)" alt="Ice Skating">
             </div>
             <div class="column">
-                <img class="demo cursor" src="assets/images/santa.jpeg" onclick="currentSlide(4)"
-                    alt="santa">
+                <img class="demo cursor" src="assets/images/santa.jpeg" onclick="currentSlide(4)" alt="Santa">
             </div>
             <div class="column">
-                <img class="demo cursor" src="assets/images/lights.jpeg" onclick="currentSlide(5)"
-                    alt="lights">
+                <img class="demo cursor" src="assets/images/lights.jpeg" onclick="currentSlide(5)" alt="Lights">
             </div>
             <div class="column">
-                <img class="demo cursor" src="assets/images/treeOrnaments.jpeg" onclick="currentSlide(6)"
-                    alt="Ornaments">
+                <img class="demo cursor" src="assets/images/treeOrnaments.jpeg" onclick="currentSlide(6)" alt="Ornaments">
             </div>
         </div>
     </div>
 
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024</p>
+            <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
+        </div>
+        <div class="foot">
+            <h3>Check us out on Github!</h3>
+            <ul class="social-links">
+                <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Hailey Evans</a></li>
+                <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Gabriel Ihloff</a></li>
+                <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Rylie Isbell</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/gallery.js"></script>
 </body>
-
-<footer class="footer">
-    <p>&copy; 2024</p>
-    <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
-
-    <h3>Follow Us on Github!</h3>
-    <ul class="social-links">
-        <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Github-Hailey
-                Evans</a></li>
-        <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Github-Gabriel
-                Ihloff</a></li>
-        <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Github-Rylie
-                Isbell</a></li>
-    </ul>
-</footer>
-
 </html>

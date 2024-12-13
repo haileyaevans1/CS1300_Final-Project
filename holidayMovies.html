@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Holiday Movies</title>
 
-        <link rel="stylesheet" href="assets/css/styleSheet.css">
-       
-        <meta charset="UTF-8">
-        <meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
-        <meta name="description" content="Holiday Ideas">
-        <meta name="keywords" content="Holiday, movies, recipes, events" >
-        <meta name="viewport" content="width=device-width">
-    </head>
+<head>
+    <title>Holiday Movies</title>
 
-    <header class="header">
-        <nav>
-            <table>
-                <ul>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="holidayRecipes.html">Recipes</a></td>
-                    <td><a href="holidayMovies.html">Movies</a></td>
-                    <td><a href="holidayActivity.html">Activities</a></td>
-                </ul>
-            </table>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="assets/css/styleSheet.css">
 
-    <body>
-        <!-- Hero Section -->
-        <div class="hero">
-            <h1>Holiday Movies</h1>
-        </div>
-    
-        <!-- Movie Grid -->
-        <div class="recipe-grid">
+    <meta charset="UTF-8">
+    <meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
+    <meta name="description" content="Holiday Ideas">
+    <meta name="keywords" content="Holiday, movies, recipes, events">
+    <meta name="viewport" content="width=device-width">
+</head>
 
-            <!-- 1st movie card -->
-            <div class="movie-card">
-                <img src="assets/images/elf.jpg" alt="Elf the movie poster.">
-                <div class="content">
-                    <h3>Elf</h3>
-                    <button onclick="">Details</button>
-                </div>
-            </div>
-
-            <!-- 2nd movie card -->
-            <div class="movie-card">
-                <img src="assets/images/grinch.jpg" alt="How the Grinch Stole Christmas movie poster.">
-                <div class="content">
-                    <h3>How the Grinch Stole Christmas</h3>
-                    <button onclick="">Details</button>
-                </div>
-            </div>
-
-            <!-- 3rd movie card -->
-            <div class="movie-card">
-                <img src="assets/images/home-alone.jpg" alt="Home Alone movie poster.">
-                <div class="content">
-                    <h3>Home Alone</h3>
-                    <button onclick="">Details</button>
-                </div>
-            </div>
-            <!-- 4th movie card -->
-            <div class="movie-card">
-                <img src="assets/images/nightmare-before-christmas.jpg" alt="The Nightmare Before Christmas movie poster.">
-                <div class="content">
-                    <h3>The Nightmare Before Christmas</h3>
-                    <button onclick="">Details</button>
-                </div>
-            </div>
-        
-            <!-- 5th movie card -->
-            <div class="movie-card">
-                <img src="assets/images/polar-express.jpg" alt="The Polar Express movie poster.">
-                <div class="content">
-                    <h3>The Polar Express</h3>
-                    <button onclick="">Details</button>
-                </div>
-            </div>
-        </div>
-
-        <script src="../CS1300_FinalProject/assets/js/holidayMoviesScript.js"></script>
-    </body>
-
-   
-    <footer class="footer">
-        <div>
-            <p>&copy; 2024</p>
-            <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
-        </div>
-           
-        <div class="foot">
-            <h3>Check us out on Github!</h3>
-            <ul class="social-links">
-                <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Hailey Evans</a></li>
-                <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Gabriel Ihloff</a></li>
-                <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Rylie Isbell</a></li>
+<header class="header">
+    <nav>
+        <table>
+            <ul>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="holidayRecipes.html">Recipes</a></td>
+                <td><a href="holidayMovies.html">Movies</a></td>
+                <td><a href="holidayActivity.html">Activities</a></td>
             </ul>
+        </table>
+    </nav>
+</header>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Holiday Movies</h1>
+    </div>
+
+    <!-- Movie Grid -->
+    <div class="recipe-grid">
+
+            <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="movieModal-content">
+            <span class="movieClose-button" id="movieClose-modal">&times;</span>
+            <div id="modal-data"></div>
         </div>
-    </footer>
+    </div>
+
+
+        <!-- 1st movie card -->
+        <div class="movie-card" id="movie-elf">
+            <img src="assets/images/elf.jpg" alt="Elf the movie poster.">
+            <div class="content">
+                <h3>Elf</h3>
+                <button onclick="showModal('Elf')">Details</button>
+            </div>
+        </div>
+
+        <!-- 2nd movie card -->
+        <div class="movie-card" id="movie-how-the-grinch-stole-christmas">
+            <img src="assets/images/grinch.jpg" alt="How the Grinch Stole Christmas movie poster.">
+            <div class="content">
+                <h3>How the Grinch Stole Christmas</h3>
+                <button onclick="showModal('How The Grinch Stole Christmas')">Details</button>
+            </div>
+        </div>
+
+        <!-- 3rd movie card -->
+        <div class="movie-card" id="movie-home-alone">
+            <img src="assets/images/home-alone.jpg" alt="Home Alone movie poster.">
+            <div class="content">
+                <h3>Home Alone</h3>
+                <button onclick="showModal('Home Alone')">Details</button>
+            </div>
+        </div>
+        <!-- 4th movie card -->
+        <div class="movie-card" id="movie-the-nightmare-before-christmas">
+            <img src="assets/images/nightmare-before-christmas.jpg" alt="The Nightmare Before Christmas movie poster.">
+            <div class="content">
+                <h3>The Nightmare Before Christmas</h3>
+                <button onclick="showModal('The Nightmare Before Christmas')">Details</button>
+            </div>
+        </div>
+
+        <!-- 5th movie card -->
+        <div class="movie-card" id="movie-the-polar-express">
+            <img src="assets/images/polar-express.jpg" alt="The Polar Express movie poster.">
+            <div class="content">
+                <h3>The Polar Express</h3>
+                <button onclick="showModal('The Polar Express')">Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal
+    <div id="movieModal" class="modal">
+        <div class="movieModal-content">
+            <span class="movieClose-button" id="movieClose-modal">&times;</span>
+            <div id="modal-data"></div>
+        </div>
+    </div> -->
+
+    <script src="../CS1300_FinalProject/assets/js/holidayMoviesScript.js"></script>
+</body>
+
+
+<footer class="footer">
+    <div>
+        <p>&copy; 2024</p>
+        <p>Hailey Evans, Gabriel Ihloff, Rylie Isbell</p>
+    </div>
+
+    <div class="foot">
+        <h3>Check us out on Github!</h3>
+        <ul class="social-links">
+            <li><a href="https://github.com/haileyaevans1" target="_blank" class="github" aria-label="Github">Hailey
+                    Evans</a></li>
+            <li><a href="https://github.com/gihloff" target="_blank" class="github" aria-label="Github">Gabriel
+                    Ihloff</a></li>
+            <li><a href="https://github.com/ryliei" target="_blank" class="github" aria-label="Github">Rylie Isbell</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
 </html>

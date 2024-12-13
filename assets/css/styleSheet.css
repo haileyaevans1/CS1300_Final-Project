@@ -259,6 +259,9 @@ ul {
 .recipe-card button:hover {
     background-color: #d32f2f;
 }
+#more {
+    display: none;
+}
 
 /* Movie Grid */
 .movie-grid {

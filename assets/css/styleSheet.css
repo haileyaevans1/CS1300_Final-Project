@@ -198,6 +198,18 @@ ul {
 
 
 
+/* Hero Section */
+.hero {
+    background-image: url('assets/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 /* Recipe Grid */
 .recipe-grid {
@@ -234,7 +246,7 @@ ul {
     font-size: 1.25em;
 }
 
-.recipe-card .content button {
+.recipe-card button {
     background-color: #a31621;
     color: white;
     border: none;
@@ -244,10 +256,9 @@ ul {
     transition: background-color 0.3s;
 }
 
-.recipe-card .content button:hover {
+.recipe-card button:hover {
     background-color: #d32f2f;
 }
-
 
 /* Movie Grid */
 .movie-grid {

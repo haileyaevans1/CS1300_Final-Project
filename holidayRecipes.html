@@ -5,6 +5,9 @@
         <title>Holiday Recipes</title>
 
         <link rel="stylesheet" href="assets/css/styleSheet.css">
+
+        <!-- <script src="holidayRecipeScipt.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
        
         <meta charset="UTF-8">
         <meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
@@ -32,18 +35,21 @@
             <h1>Holiday Drinks & Food Recipes</h1>
         </div>
     
+       
+        
+
+
         <!-- Recipe Grid -->
         <div class="recipe-grid">
+
             <!-- Recipe Card 1 -->
-            <div class="recipe-card" id="recipe-data">
+            <div class="recipe-card">
                 <img src="assets/images/recipe1.jpeg" alt="Hot Chocolate">
                 <div class="content">
                     <h3>Hot Chocolate</h3>
-                    <p id="dots">...<span id="more"></span></p>
-                    <button id="myBtn" onclick="fetchNutrition()">View Nutrition Facts</button>
-                    <!-- <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button> -->
-                    <!-- <p id="dots">...</p> -->
-                    <!-- <p id="more"></p> -->
+
+                    <button class="see-recipe-button" data-recipe="hot-chocolate">See Recipe</button>
+                  
                 </div>
             </div>
 
@@ -52,24 +58,25 @@
                 <img src="assets/images/recipe2.jpeg" alt="Egg Nog">
                 <div class="content">
                     <h3>Egg Nog</h3>
-                    <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button>
+                    <button class="see-recipe-button" data-recipe="egg-nog">See Recipe</button>
                 </div>
             </div>
 
             <!-- Recipe Card 3 -->
             <div class="recipe-card">
-                <img src="assets/images/recipe3.jpeg" alt="Gingerbread ">
+                <img src="assets/images/recipe3.jpeg" alt="Gingerbread">
                 <div class="content">
                     <h3>Gingerbread</h3>
-                    <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button>
+                    <button class="see-recipe-button" data-recipe="gingerbread">See Recipe</button>
                 </div>
             </div>
+
             <!-- Recipe Card 4 -->
             <div class="recipe-card">
                 <img src="assets/images/recipe4.jpeg" alt="Sugar Cookies">
                 <div class="content">
                     <h3>Sugar Cookies</h3>
-                    <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
+                    <button class="see-recipe-button" data-recipe="sugar-cookies">See Recipe</button>
                 </div>
             </div>
         
@@ -78,38 +85,24 @@
                 <img src="assets/images/recipe5.jpeg" alt="Gingerbread Martini">
                 <div class="content">
                     <h3>Gingerbread Martini</h3>
-                    <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
+                    <button class="see-recipe-button" data-recipe="gingerbread-martini">See Recipe</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Section to display nutrition facts -->
-            <div id="nutrition-section">
-                <h3>Nutrition Facts</h3>
-                <div id="nutrition-data"></div>
+        <!-- Recipe Modal -->
+        <div id="recipe-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2 id="recipe-title"></h2>
+                <h3>Ingredients:</h3>
+                <ul id="recipe-ingredients"></ul>
+                <h3>Instructions:</h3>
+                <p id="recipe-instructions"></p>
             </div>
-
-                      <!-- Nutrition Facts Modal -->
-            <!-- <div id="nutrition-modal" class="modal hidden">
-                <div id="nutrition-data" class="modal-content">
-                    <button id="close-modal" onclick="closeModal()">&times;</span>
-                    <h2>Nutrition Facts</h2>
-                    <div id="nutrition-data">
-                        Dynamic Content -->
-                    <!-- </div>
-                </div>
-            </div> -->
         </div>
     
-            <!-- Nutrition Facts Modal -->
-        <!-- <div id="nutrition-modal" class="modal hidden">
-            <div id="nutrition-data" class="modal-content">
-                <button id="close-modal" onclick="closeModal()">&times;</span>
-                <h2>Nutrition Facts</h2>
-                <div id="nutrition-data">
-                    Dynamic Content -->
-                <!-- </div>
-            </div> -->
-        </div>
+        <script src="assets/js/holidayRecipes.js"></script>
 
         <footer class="footer">
             <div>
@@ -127,6 +120,6 @@
             </div>
         </footer>
 
-        <script src="holidayRecipeScipt.js"></script>
+        <!-- <script src="holidayRecipeScipt.js"></script> -->
     </body>
 </html>

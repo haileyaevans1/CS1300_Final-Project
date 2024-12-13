@@ -35,7 +35,7 @@
         <!-- Recipe Grid -->
         <div class="recipe-grid">
             <!-- Recipe Card 1 -->
-            <div class="recipe-card">
+            <div class="recipe-card" id="recipe-data">
                 <img src="assets/images/recipe1.jpeg" alt="Hot Chocolate">
                 <div class="content">
                     <h3>Hot Chocolate</h3>
@@ -78,25 +78,33 @@
                 </div>
             </div>
 
-            <!-- Recipe Card 6
-            <div class="recipe-card">
-                <img src="assets/images/recipe6.jpg" alt="Hotty Toddy">
-                <div class="content">
-                    <h3>Sugar Cookies</h3>
-                    <button onclick="fetchNutrition('2 cups flour + 1 cup sugar + 1 tsp ginger')">View Nutrition Facts</button>
+            <!-- Section to display nutrition facts -->
+            <div id="nutrition-section">
+                <h3>Nutrition Facts</h3>
+                <div id="nutrition-data"></div>
+            </div>
+
+                      <!-- Nutrition Facts Modal -->
+            <!-- <div id="nutrition-modal" class="modal hidden">
+                <div id="nutrition-data" class="modal-content">
+                    <button id="close-modal" onclick="closeModal()">&times;</span>
+                    <h2>Nutrition Facts</h2>
+                    <div id="nutrition-data">
+                        Dynamic Content -->
+                    <!-- </div>
                 </div>
             </div> -->
         </div>
     
             <!-- Nutrition Facts Modal -->
-        <div id="nutrition-modal" class="modal hidden">
-            <div class="modal-content">
-                <span id="close-modal" onclick="closeModal()">&times;</span>
+        <!-- <div id="nutrition-modal" class="modal hidden">
+            <div id="nutrition-data" class="modal-content">
+                <button id="close-modal" onclick="closeModal()">&times;</span>
                 <h2>Nutrition Facts</h2>
                 <div id="nutrition-data">
-                    <!-- Dynamic Content -->
-                </div>
-            </div>
+                    Dynamic Content -->
+                <!-- </div>
+            </div> -->
         </div>
 
         <footer class="footer">

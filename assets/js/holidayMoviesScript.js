@@ -21,9 +21,11 @@ async function fetchMovieData(apiKey, movieTitle) {
     throw error; // Re-throw the error for handling in the calling function
   }
 }
+const modal = document.getElementById("movieModal");
+modal.style.display = "none";
 
 async function showModal(movieTitle) {
-  const modal = document.getElementById("movieModal");
+  // const modal = document.getElementById("movieModal");
   const modalData = document.getElementById("modal-data");
   
   try {

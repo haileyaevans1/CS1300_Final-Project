@@ -5,6 +5,9 @@
         <title>Holiday Recipes</title>
 
         <link rel="stylesheet" href="assets/css/styleSheet.css">
+
+        <script src="holidayRecipeScipt.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
        
         <meta charset="UTF-8">
         <meta name="author" content="Hailey Evans, Gabriel Ihloff, Rylie Isbell">
@@ -34,12 +37,15 @@
     
         <!-- Recipe Grid -->
         <div class="recipe-grid">
+
             <!-- Recipe Card 1 -->
             <div class="recipe-card" id="recipe-data">
                 <img src="assets/images/recipe1.jpeg" alt="Hot Chocolate">
                 <div class="content">
                     <h3>Hot Chocolate</h3>
-                    <button onclick="fetchNutrition('1 cup milk + 1 tbsp cocoa powder')">View Nutrition Facts</button>
+                    <input type="id1" id="ingredient-input" placeholder="Enter holiday food or drink option" -->
+                    <button onclick="fetchRecipes()">See Recipes</button>
+                    <!-- <div id="recipe-container"></div> -->
                 </div>
             </div>
 
@@ -79,10 +85,10 @@
             </div>
 
             <!-- Section to display nutrition facts -->
-            <div id="nutrition-section">
+            <!-- <div id="nutrition-section">
                 <h3>Nutrition Facts</h3>
                 <div id="nutrition-data"></div>
-            </div>
+            </div> -->
 
                       <!-- Nutrition Facts Modal -->
             <!-- <div id="nutrition-modal" class="modal hidden">
@@ -105,6 +111,16 @@
                     Dynamic Content -->
                 <!-- </div>
             </div> -->
+        </div>
+
+        <!-- Recipe Modal -->
+        <div id="recipe-modal" class="hidden">
+            <div id="modal-content">
+                <span id="close-modal">&times;</span>
+                <h2 id="recipe-title"></h2>
+                <p id="recipe-ingredients"></p>
+                <p id="recipe-instructions"></p>
+            </div>
         </div>
 
         <footer class="footer">

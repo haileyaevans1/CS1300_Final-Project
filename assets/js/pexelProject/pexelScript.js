@@ -37,4 +37,4 @@ async function fetchAndSaveImage(url, filename) {
     try {
         const response = await fetch(url);
         const buffer = await response.buffer();
-    
+    }

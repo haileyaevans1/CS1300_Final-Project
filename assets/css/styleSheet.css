@@ -248,6 +248,10 @@ ul {
     background-color: #d32f2f;
 }
 
+#more {
+    display: none;
+}
+
 /* Movie Grid */
 .movie-grid {
     display: grid;
